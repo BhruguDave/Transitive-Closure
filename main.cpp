@@ -38,18 +38,18 @@ int main(int argc, char** argv){
     vector<string> datasets;        // path to the datasets to be used for evaluation
     vector<int> sizeOfDataset;      // Number of Vertices in Coresponding Dataset
 
-    datasets.push_back("../datasets/Kohonen.csv");            sizeOfDataset.push_back(4470);
-    datasets.push_back("../datasets/wing_nodal.csv");         sizeOfDataset.push_back(10937);
-    datasets.push_back("../datasets/delaunay_n16.csv");       sizeOfDataset.push_back(65536);
-    datasets.push_back("../datasets/usroads.csv");            sizeOfDataset.push_back(129164);
-    datasets.push_back("../datasets/md2010.csv");             sizeOfDataset.push_back(145247);
-    datasets.push_back("../datasets/caidaRouterLevel.csv");   sizeOfDataset.push_back(192244); 
-    datasets.push_back("../datasets/coAuthorsCiteseer.csv");  sizeOfDataset.push_back(227320);
-    datasets.push_back("../datasets/citationCiteseer.csv");   sizeOfDataset.push_back(268495);
-    datasets.push_back("../datasets/mc2depi.csv");            sizeOfDataset.push_back(525825);
-    datasets.push_back("../datasets/roadNet-PA.csv");         sizeOfDataset.push_back(1090920);
-    datasets.push_back("../datasets/roadNet-TX.csv");         sizeOfDataset.push_back(1393383);
-    datasets.push_back("../datasets/roadNet-CA.csv");         sizeOfDataset.push_back(1971281);
+    datasets.push_back("./datasets/Kohonen.csv");            sizeOfDataset.push_back(4470);
+    datasets.push_back("./datasets/wing_nodal.csv");         sizeOfDataset.push_back(10937);
+    datasets.push_back("./datasets/delaunay_n16.csv");       sizeOfDataset.push_back(65536);
+    datasets.push_back("./datasets/usroads.csv");            sizeOfDataset.push_back(129164);
+    datasets.push_back("./datasets/md2010.csv");             sizeOfDataset.push_back(145247);
+    datasets.push_back("./datasets/caidaRouterLevel.csv");   sizeOfDataset.push_back(192244); 
+    datasets.push_back("./datasets/coAuthorsCiteseer.csv");  sizeOfDataset.push_back(227320);
+    datasets.push_back("./datasets/citationCiteseer.csv");   sizeOfDataset.push_back(268495);
+    datasets.push_back("./datasets/mc2depi.csv");            sizeOfDataset.push_back(525825);
+    datasets.push_back("./datasets/roadNet-PA.csv");         sizeOfDataset.push_back(1090920);
+    datasets.push_back("./datasets/roadNet-TX.csv");         sizeOfDataset.push_back(1393383);
+    datasets.push_back("./datasets/roadNet-CA.csv");         sizeOfDataset.push_back(1971281);
 
     string resultsFileName = "results.txt";
     output.open(resultsFileName);
@@ -137,7 +137,7 @@ void runV1(bool runSerial, vector<int> processes, vector<string> datasets, vecto
         cout << "Number of edges in input : " << number_of_edges_in_input << endl;
         cout << "--------------------------------------------------\n";
 
-        // Serial Implementation of V3
+        // Serial Implementation of V1
         if(runSerial){
 
             startTime = omp_get_wtime();
@@ -278,7 +278,7 @@ void runV2(bool runSerial, vector<int> processes, vector<string> datasets, vecto
         cout << "Number of edges in input : " << number_of_edges_in_input << endl;
         cout << "--------------------------------------------------\n";
 
-        // Serial Implementation of V3
+        // Serial Implementation of V2
         if(runSerial){
 
             startTime = omp_get_wtime();
