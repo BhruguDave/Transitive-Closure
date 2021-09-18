@@ -1,6 +1,6 @@
 # Transitive-Closure
 This repository contains three parallelized algorithms to find the Transitive Closure of a given input graph on shared memory systems using the OpenMP API in C++. The three algorithms are:
-* V1 : Adjacency list based implementation
+* V1 : Adjacency list based implementation (Note: This implementation takes execution times in the order of hours)
 * V2 : Adjacency matrix based implementation
 * V3 : Cache-optimized adjacency matrix based implementation
 ## File and Directory structure
