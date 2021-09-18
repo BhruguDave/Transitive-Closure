@@ -13,6 +13,7 @@ From the command line tool, change the directory to the `Transitive-Closure`  </
 
 Use the following command to compile the code:
 #### `g++ main.cpp -O3 -fopenmp -o main.out`
+##### Note: Use g++ if gcc fails to compile on your system
 Use the following command to run the code enter:
 #### `./main.out`
 ## Experiment customization
